@@ -14,6 +14,7 @@ BOT_NAME = 'tieba'
 SPIDER_MODULES = ['tieba.spiders']
 NEWSPIDER_MODULE = 'tieba.spiders'
 FEED_EXPORT_ENCODING = 'utf-8'
+FEED_EXPORTERS={'rss':'tieba.rssitemexporter.RSSItemExporter'}
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -72,7 +73,7 @@ ITEM_PIPELINES = {
 }
 IMAGES_URLS_FIELD='image_urls'
 IMAGES_RESULT_FIELD='images'
-IMAGES_STORE='/Users/diater/Pictures/sc'
+IMAGES_STORE='/Volumes/diater/Ya'
 MEDIA_ALLOW_REDIRECTS = True
 IMAGES_MIN_WIDTH=70
 IMAGES_MIN_HEIGHT=70

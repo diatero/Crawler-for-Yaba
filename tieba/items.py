@@ -13,4 +13,5 @@ class TiebaItem(scrapy.Item):
     author = scrapy.Field()
     image_urls = scrapy.Field()
     images=scrapy.Field()
+    images_name=scrapy.Field()
     # pass
